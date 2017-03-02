@@ -1,23 +1,42 @@
+html,
 body {
-    background-image: url("../images/bg.png");
+    height: 100%;
+    margin: 0;
 }
 
-.container {
-    width: auto;
+body {
+    background-image: url("http://res.cloudinary.com/dnwcoe12h/image/upload/v1488400338/bg_wmchfi.png");
+}
+
+.active {
+    background-color: rgba(22, 41, 74, 0.8);
+}
+
+#wrap {
+    min-height: 100%;
+    margin: 0 auto -50px;
 }
 
 #main {
     position: relative;
     left: 0;
+    min-height: 785px;
+}
+
+#logo {
+    position: absolute;
+    width: 50%;
+    left: 5%;
+    padding-top: 50px;
 }
 
 #info {
     position: absolute;
     font-family: 'Lato', sans-serif;
-    top: 0;
     left: 5%;
     width: 50%;
     color: #fff;
+    padding-top: 40px;
 }
 
 #title {
@@ -29,18 +48,18 @@ p {
     font-size: 20px;
 }
 
-p a {
-    color: #ffe900;
+a {
+    color: #ffe900 !important;
 }
 
-p a:hover {
-    text-decoration: none;
-    color: #fcfc4b;
+a:hover {
+    text-decoration: none !important;
+    color: #fcfc4b !important;
 }
 
-p a:visited {
-    text-decoration: none;
-    color: #ffe900;
+a:visited {
+    text-decoration: none !important;
+    color: #ffe900 !important;
 }
 
 i {
@@ -50,7 +69,7 @@ i {
 
 .features {
     padding: 15px;
-    width: 700px;
+    width: 690px;
 }
 
 .features-text {
@@ -77,10 +96,6 @@ i {
     position: absolute;
     z-index: 15;
     height: 560px;
-}
-
-.active {
-    background-color: rgba(22, 41, 74, 0.8);
 }
 
 #features-banner,
@@ -112,24 +127,33 @@ i {
     font-size: 20px;
 }
 
-.rwd-break {
-    display: none;
+#push {
+    height: 50px;
 }
 
 #footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
+    height: 50px;
+    background-color: rgba(22, 41, 74, 0.8);
 }
 
-@media screen and (max-width: 382px) {
-    .rwd-break {
-        display: block;
-    }
+#footer-content {
+    color: white;
+    text-align: center;
+}
+
+#footer-content p {
+    font-size: 14px;
+    padding-top: 15px;
 }
 
 @media screen and (max-width: 657px) {
+    .container {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    #main {
+        min-height: auto;
+    }
     .features,
     #iphone {
         display: none;
@@ -140,9 +164,9 @@ i {
         width: 100%;
         left: 0;
         padding-bottom: 30px;
+        margin-bottom: 0px;
     }
     #title {
-        margin-top: 50px;
         margin-bottom: 30px;
     }
     #features {
@@ -150,9 +174,10 @@ i {
     }
     #features-banner {
         display: block;
-        position: absolute;
+        position: relative;
+        ;
         background-color: #ffc400;
-        padding: 0px 5px 5px 5px;
+        padding: 5px;
         color: #fff;
         text-align: center;
         font-family: 'Lato', sans-serif;
@@ -163,15 +188,29 @@ i {
     }
     #features-carousel {
         display: block;
-        margin-top: 60px;
-        position: absolute;
+        position: relative;
         width: 100%;
         left: 0;
+        z-index: 10;
+    }
+    #footer {
+        height: auto;
+    }
+    #footer-content p {
+        margin: 0;
+        padding-top: 0;
+    }
+    #footer-content p {
+        padding: 10px;
     }
     #logo {
-        float: right;
-        margin-right: 6%;
-        margin-top: 3%;
+        width: 100%;
+        position: static;
+        margin: 0 auto;
+        text-align: center;
+    }
+    #logo img {
+        width: 275px;
     }
 }
 
@@ -181,6 +220,7 @@ i {
     }
     #title {
         margin-top: 27%;
+        font-size: 31px;
     }
     #iphone-img {
         margin-top: 50px;
@@ -197,9 +237,10 @@ i {
         margin-left: 399px;
     }
     #logo {
-        float: right;
-        margin-right: -3%;
-        margin-top: 3%;
+        margin-left: -5%;
+    }
+    .fa {
+        font-size: 22px !important;
     }
 }
 
@@ -208,7 +249,7 @@ i {
         margin-top: 20%;
     }
     #iphone-img {
-        margin-top: 3.5%;
+        margin-top: 4%;
         margin-left: 550px;
     }
     #weather-img,
@@ -218,13 +259,8 @@ i {
     #links-img,
     #news-img,
     #map-img {
-        margin-top: 13.8%;
+        margin-top: 14.4%;
         margin-left: 584px;
-    }
-    #logo {
-        float: right;
-        margin-right: 2%;
-        margin-top: 3%;
     }
 }
 
@@ -233,7 +269,7 @@ i {
         margin-top: 17%;
     }
     #iphone-img {
-        margin-top: 3%;
+        margin-top: 3.5%;
         margin-left: 700px;
     }
     #weather-img,
@@ -243,12 +279,7 @@ i {
     #links-img,
     #news-img,
     #map-img {
-        margin-top: 11.5%;
+        margin-top: 12%;
         margin-left: 734px;
-    }
-    #logo {
-        float: right;
-        margin-right: 6%;
-        margin-top: 3%;
     }
 }
