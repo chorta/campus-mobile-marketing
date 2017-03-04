@@ -21,13 +21,13 @@ body {
     position: relative;
     left: 0;
     min-height: 785px;
+    padding-top: 50px;
 }
 
 #logo {
-    position: absolute;
+    position: relative;;
     width: 50%;
     left: 5%;
-    padding-top: 50px;
 }
 
 #info {
@@ -36,7 +36,6 @@ body {
     left: 5%;
     width: 50%;
     color: #fff;
-    padding-top: 40px;
 }
 
 #title {
@@ -219,11 +218,11 @@ i {
         left: 0;
     }
     #title {
-        margin-top: 27%;
+        margin-top: 6;
         font-size: 31px;
     }
     #iphone-img {
-        margin-top: 50px;
+        margin-top: -68px;
         margin-left: 365px;
     }
     #weather-img,
@@ -233,7 +232,7 @@ i {
     #links-img,
     #news-img,
     #map-img {
-        margin-top: 147px;
+        margin-top: 4.1%;
         margin-left: 399px;
     }
     #logo {
@@ -246,10 +245,10 @@ i {
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
     #title {
-        margin-top: 20%;
+        margin-top: 6%;
     }
     #iphone-img {
-        margin-top: 4%;
+        margin-top: -68px;
         margin-left: 550px;
     }
     #weather-img,
@@ -259,17 +258,17 @@ i {
     #links-img,
     #news-img,
     #map-img {
-        margin-top: 14.4%;
+        margin-top: 3.1%;
         margin-left: 584px;
     }
 }
 
 @media screen and (min-width: 1200px) {
     #title {
-        margin-top: 17%;
+        margin-top: 5.5%;
     }
     #iphone-img {
-        margin-top: 3.5%;
+        margin-top: -66px;
         margin-left: 700px;
     }
     #weather-img,
@@ -279,7 +278,7 @@ i {
     #links-img,
     #news-img,
     #map-img {
-        margin-top: 12%;
+        margin-top: 2.7%;
         margin-left: 734px;
     }
 }
